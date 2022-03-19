@@ -37,11 +37,11 @@ export function Home() {
   useEffect(() => {
     const currentHour = new Date().getHours();
     if (currentHour < 12) {
-      setGreeting("Good morning");
+      setGreeting("Bom dia");
     } else if (currentHour >= 12 && currentHour < 18) {
-      setGreeting("Good afternoon");
+      setGreeting("Boa tarde");
     } else {
-      setGreeting("Good night");
+      setGreeting("Boa noite");
     }
   }, []);
 
